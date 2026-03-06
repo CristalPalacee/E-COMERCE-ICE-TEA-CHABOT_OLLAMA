@@ -5,7 +5,20 @@ from database.connect import get_product_context
 settings = get_settings()
 import pytz
 from datetime import datetime
+
+
+ # KALAU MAU PAKAI API AI GEMINI DAN OPEN AI
+# client = OpenAI(api_key=settings.OPENAI_API_KEY)
+
+
 def stream_chat(messages, model):
+    
+    
+    # KALAU MAU PAKAI API AI GEMINI DAN OPEN AI
+    # response = client.chat.completions.create(
+    # model=model, # misal "gpt-4o"
+    # messages=full_messages,
+    # stream=True )
     
     user_message = messages[-1]['content'] if messages else ""
     product_info = get_product_context(user_message)
