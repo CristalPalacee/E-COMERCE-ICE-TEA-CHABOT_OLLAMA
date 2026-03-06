@@ -8,8 +8,8 @@ node_modules/
 .yarn/install-state.gz
 
 # Next.js build output
-/.next/
-/out/
+.next/
+out/
 /build
 
 # Testing
